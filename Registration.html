@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">HOME</a>|
+            <a href="./event.html">Events</a>|
+            <a href="./schedule.html">schedule</a>|
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#eef2ff;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    padding:20px;
+    text-align:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    margin:0 10px;
+}
+
+nav a:hover{
+    color:#dbeafe;
+}
+
+/* Main Form Container */
+
+main{
+    max-width:900px;
+    margin:40px auto;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:30px;
+}
+
+h3{
+    color:#1e3a8a;
+    margin-top:25px;
+    margin-bottom:15px;
+    border-left:5px solid #2563eb;
+    padding-left:10px;
+}
+
+/* Inputs */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+}
+
+textarea{
+    resize:vertical;
+    min-height:80px;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+/* Checkboxes and Radios */
+
+input[type="checkbox"],
+input[type="radio"]{
+    margin-right:6px;
+    margin-top:10px;
+}
+
+label{
+    color:#333;
+}
+
+/* Rules Section */
+
+ol{
+    margin-left:25px;
+    margin-top:10px;
+}
+
+ol li{
+    margin-bottom:8px;
+}
+
+/* Button */
+
+button{
+    width:100%;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:15px;
+    margin-top:25px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e40af;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+    </header>
+        <main>
+        <h1>Registration Form</h1>
+        <form action="">
+            <h3>Personal Information</h3>
+            <label for="Name">Name</label>
+            <input type="text" name="Name" id="Name" placeholder="Enter Full Name" required>
+            <br><br>
+
+            <label for="gender">Male</label>
+            <input type="radio" name="Gender" id="Male">
+            <label for="gender">Female</label>
+            <input type="radio" name="Gender" id="Female">
+            <br><br>
+
+            <label for="Email">Email</label>
+            <input type="text" name="Email" id="Email" placeholder="Enter Email ID" required>
+            <br><br>
+
+            <label for="Contact">Contact</label>
+            <input type="tel" name="Contact" id="Contact"  placeholder="123-456-78" required>
+            <br><br>
+
+            <label for="collegeName">college Name</label>
+            <textarea name="collegeName" id="collegeName" placeholder="ABC college" required></textarea>
+            <br><br>
+
+            <h3>Event Information</h3>
+
+            <label>Select Event Category:</label>
+            <br><br>
+            
+            <input type="checkbox" name="category" id="technical">
+            <label for="technical">Technical</label>
+            
+            <input type="checkbox" name="category" id="cultural">
+            <label for="cultural">Cultural</label>
+            
+            <input type="checkbox" name="category" id="gaming">
+            <label for="gaming">Gaming</label>
+            
+            <input type="checkbox" name="category" id="sports">
+            <label for="sports">Sports</label>
+            
+            <br><br>
+            
+            <label>Select Specific Events:</label>
+            <br><br>
+            
+            <input type="checkbox" id="coding">
+            <label for="coding">Coding Competition</label>
+            <br>
+            
+            <input type="checkbox" id="hackathon">
+            <label for="hackathon">Hackathon</label>
+            <br>
+            
+            <input type="checkbox" id="webdesign">
+            <label for="webdesign">Web Design Contest</label>
+            <br>
+
+            <input type="checkbox" id="AiChallenge">
+            <label for="AiChallenge">Ai Challenge</label>
+            <br>
+
+            <input type="checkbox" id="Robotics">
+            <label for="Robotics">Robotics</label>
+            <br><br>
+            
+            <input type="checkbox" id="singing">
+            <label for="singing">Singing Competition</label>
+            <br>
+            
+            <input type="checkbox" id="dance">
+            <label for="dance">Dance Competition</label>
+            <br>
+
+            <input type="checkbox" id="Fashionshow">
+            <label for="Fashionshow">Fashion Show</label>
+            <br>
+
+            <input type="checkbox" id="drama">
+            <label for="drama">Drama</label>
+            <br>
+
+            <input type="checkbox" id="Stand-up">
+            <label for="Stand-up">Stand-up</label>
+            <br><br>
+            
+            <input type="checkbox" id="bgmi">
+            <label for="bgmi">BGMI Tournament</label>
+            <br>
+            
+            <input type="checkbox" id="valorant">
+            <label for="valorant">Valorant Tournament</label>
+            <br>
+
+            <input type="checkbox" name="FreeFire" id="FreeFire">
+            <label for="FreeFire">FreeFire</label>
+            <br>
+
+            <input type="checkbox" name="FIFA" id="FIFA">
+            <label for="FIFA">FIFA</label>
+            <br><br>
+            
+            <input type="checkbox" id="cricket">
+            <label for="cricket">Cricket Tournament</label>
+            <br>
+
+            <input type="checkbox" id="Football">
+            <label for="Football">Football Tournament</label>
+            <br>
+
+            <input type="checkbox" id="Volleyball">
+            <label for="Volleyball">Volleyball Tournament</label>
+            <br>
+            
+            <input type="checkbox" id="chess">
+            <label for="chess">Chess Competition</label>
+            
+
+            <h3>Accommodation</h3>
+            <label for="Accommodation">Hostel</label>
+            <input type="radio" name="Accommodation" id="Hostel">
+
+            <label for="Accommodation">NON-Hostel</label>
+            <input type="radio" name="Accommodation" id="NON-Hostel">
+            <br><br>
+            <div>
+                <h3>Rules & Guidelines</h3>
+                <ol>
+                    <li>Carry college ID.</li>
+                    <li>Report 30 minutes before event.</li>
+                    <li>No unfair means.</li>
+                    <li>Respect organizers.</li>
+                    <li>Follow venue instructions.</li>
+                </ol>
+                <input type="checkbox" id="Terms-And-Condition" required>
+                <label for="Terms-And-Condition">YES  i agree all of the Rules & Guidelines</label>
+            </div>
+            <button>Submit</button>
+            
+        </form>
+        </main>
+        <footer>
+            <p>&copy; 2026 NIIMACK Fest</p> 
+        </footer>
+</body>
+</html>
